@@ -22,6 +22,12 @@ export const NAV_LINKS = [
   { label: 'Contato', href: '#contato' },
 ]
 
+// Placeholder até o cliente confirmar os perfis reais — ver BACKLOG.md.
+export const SOCIAL = {
+  instagram: '#',
+  linkedin: '#',
+}
+
 export const HERO_BADGES = [
   { label: 'Segurança', sub: 'e Conformidade', icon: 'shield' },
   { label: 'Agilidade', sub: 'nos Processos', icon: 'clock' },
@@ -37,28 +43,13 @@ export const SERVICES = [
   },
   {
     icon: 'edit',
-    title: 'Alterações Contratuais',
-    desc: 'Alterações de contrato social, ativo, sócios, endereço e muito mais.',
-  },
-  {
-    icon: 'shield',
-    title: 'Regularização Empresarial',
-    desc: 'Regularizamos pendências e mantemos sua empresa em dia com os órgãos competentes.',
+    title: 'Alterações Contratuais e/ou Estatutárias',
+    desc: 'Alterações de contrato social ou estatuto, sócios, atividade, endereço e muito mais.',
   },
   {
     icon: 'folder',
-    title: 'Registros na Junta Comercial',
-    desc: 'Arquivamentos de atos societários com total segurança e agilidade.',
-  },
-  {
-    icon: 'list',
-    title: 'Licenças e Inscrições',
-    desc: 'Obtenção de alvarás, licenças e inscrições para o seu negócio funcionar.',
-  },
-  {
-    icon: 'chart',
-    title: 'Assessoria Empresarial',
-    desc: 'Suporte estratégico para o crescimento e proteção da sua empresa.',
+    title: 'Baixa de Empresa',
+    desc: 'Encerramento da empresa com toda a documentação e baixas necessárias junto aos órgãos competentes.',
   },
 ]
 
@@ -83,8 +74,8 @@ export const HOW_IT_WORKS = [
 
 export const FAQ_ITEMS = [
   {
-    q: 'Preciso ir até um cartório ou órgão público?',
-    a: 'Não. Todo o processo é conduzido 100% online — você só precisa nos enviar os documentos solicitados pelo WhatsApp ou e-mail.',
+    q: 'Preciso ir até a junta comercial ou algum órgão público?',
+    a: 'Na grande maioria dos casos — cerca de 90% — não. Conduzimos o processo online e você só precisa nos enviar os documentos solicitados pelo WhatsApp ou e-mail. Existem situações específicas em que a presença é exigida por lei; nesses casos avisamos com antecedência e te acompanhamos em cada etapa.',
   },
   {
     q: 'Quanto tempo leva para abrir ou regularizar minha empresa?',
@@ -95,12 +86,8 @@ export const FAQ_ITEMS = [
     a: 'Sim. Atendemos MEI, EIRELI, LTDA, S.A. e demais enquadramentos, tanto para abertura quanto para regularização e alterações contratuais.',
   },
   {
-    q: 'Como funciona o pagamento pelos serviços?',
-    a: 'Após avaliarmos o seu caso, enviamos um orçamento claro e fechado, sem taxas escondidas. O pagamento pode ser combinado diretamente com o especialista.',
-  },
-  {
     q: 'Vocês atendem empresas fora de São Paulo?',
-    a: 'Sim, atendemos empresas em todo o Brasil — todo o processo acontece online, então a localização não é um problema.',
+    a: 'Sim, atendemos empresas em todo o Brasil. Temos experiência com juntas comerciais de todos os estados, sem exceção — o processo acontece online, então a localização da sua empresa não é um problema.',
   },
 ]
 

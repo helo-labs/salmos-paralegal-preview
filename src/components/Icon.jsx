@@ -74,6 +74,20 @@ const PATHS = {
   arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
   close: <path d="M18 6 6 18M6 6l12 12" />,
   menu: <path d="M4 7h16M4 12h16M4 17h16" />,
+  instagram: (
+    <>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <path d="M17.5 6.5h.01" />
+    </>
+  ),
+  linkedin: (
+    <>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </>
+  ),
 }
 
 export default function Icon({ name, size = 20, className = '', strokeWidth = 1.8 }) {

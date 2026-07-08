@@ -18,7 +18,7 @@ export default function FinalCta() {
           href={WA.default}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 font-body text-[13.5px] font-semibold text-waBright transition-all hover:opacity-75 active:scale-[0.97]"
+          className="inline-flex items-center gap-2 font-body text-[13.5px] font-semibold text-wa transition-all hover:opacity-75 active:scale-[0.97]"
         >
           <WhatsAppIcon size={16} />
           Fale com um especialista agora mesmo!

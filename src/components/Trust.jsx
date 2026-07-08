@@ -8,7 +8,7 @@ export default function Trust() {
         aria-hidden
         className="pointer-events-none absolute -left-40 top-1/2 hidden h-[520px] w-[520px] -translate-y-1/2 rounded-full sm:block"
         style={{
-          background: 'radial-gradient(circle, rgba(171,181,87,.08) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(59,130,246,.08) 0%, transparent 65%)',
         }}
       />
 
