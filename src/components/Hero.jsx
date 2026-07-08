@@ -33,7 +33,7 @@ export default function Hero() {
       <div
         aria-hidden
         className="pointer-events-none absolute -left-32 bottom-0 h-[420px] w-[420px] rounded-full"
-        style={{ background: 'radial-gradient(circle, rgba(171,181,87,.10) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(59,130,246,.10) 0%, transparent 70%)' }}
       />
 
       {/* dot grid, sutil */}
@@ -109,7 +109,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col gap-1 p-4">
-              {SERVICES.slice(0, 4).map((sv, i) => (
+              {SERVICES.map((sv, i) => (
                 <div
                   key={sv.title}
                   className="flex items-center gap-3.5 rounded-lg border border-border2 bg-surface px-4 py-3.5"

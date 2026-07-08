@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Logo from './Logo'
 import Icon from './Icon'
-import { NAV_LINKS, WA } from '../data/content'
+import { NAV_LINKS, SOCIAL, WA } from '../data/content'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -37,11 +37,32 @@ export default function Navbar() {
           ))}
         </nav>
 
+        <div className="hidden md:flex items-center gap-1.5">
+          <a
+            href={SOCIAL.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Instagram"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-gold"
+          >
+            <Icon name="instagram" size={15} />
+          </a>
+          <a
+            href={SOCIAL.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-gold"
+          >
+            <Icon name="linkedin" size={15} />
+          </a>
+        </div>
+
         <a
           href={WA.default}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center gap-2 rounded-lg bg-gold px-4 py-2.5 font-body text-[13px] font-semibold text-bg transition-all hover:-translate-y-0.5 active:scale-[0.96]"
+          className="hidden md:inline-flex items-center gap-2 rounded-lg bg-gold px-4 py-2.5 font-body text-[13px] font-semibold text-hi transition-all hover:-translate-y-0.5 active:scale-[0.96]"
         >
           Falar agora
           <Icon name="arrow" size={14} strokeWidth={2.5} />
@@ -78,7 +99,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="mt-4 rounded-lg bg-gold py-3.5 text-center font-body text-[14px] font-semibold text-bg transition-transform active:scale-[0.97]"
+            className="mt-4 rounded-lg bg-gold py-3.5 text-center font-body text-[14px] font-semibold text-hi transition-transform active:scale-[0.97]"
           >
             Falar no WhatsApp →
           </a>

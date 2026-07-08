@@ -29,7 +29,7 @@ export default function GrowthBanner() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'linear-gradient(to top, #0a0c0a 10%, rgba(10,12,10,.4) 55%, transparent 100%)',
+            'linear-gradient(to top, #ffffff 10%, rgba(255,255,255,.4) 55%, transparent 100%)',
         }}
       />
 
@@ -45,7 +45,7 @@ export default function GrowthBanner() {
             href={WA.default}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 rounded-xl bg-gold px-6 py-3.5 font-body text-[14px] font-semibold text-bg transition-all hover:-translate-y-0.5 active:scale-[0.97]"
+            className="inline-flex items-center gap-2.5 rounded-xl bg-gold px-6 py-3.5 font-body text-[14px] font-semibold text-hi transition-all hover:-translate-y-0.5 active:scale-[0.97]"
           >
             Começar agora
           </a>

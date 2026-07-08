@@ -4,20 +4,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: '#0a0c0a',
-        bg2: '#0f120f',
-        bg3: '#141814',
-        surface: '#1a1f1a',
-        forest: '#192518',
-        green: '#1c2d1b',
+        // Tema claro: fundo branco, destaques em dourado + azul (tonalidade
+        // da Salmos Contabilidade). Os nomes dos tokens (forest/green/sage)
+        // ficaram do template original — hoje eles apontam pra azul, não verde.
+        bg: '#ffffff',
+        bg2: '#f7f4ec',
+        bg3: '#ffffff',
+        surface: '#eef3fb',
+        forest: '#1f3856',
+        green: '#16283f',
         gold: '#cba552',
-        sage: '#abb557',
-        hi: '#f0ede6',
-        mid: 'rgba(240,237,230,.78)',
-        lo: 'rgba(240,237,230,.56)',
-        xlo: 'rgba(240,237,230,.30)',
-        border: 'rgba(255,255,255,.10)',
-        border2: 'rgba(255,255,255,.06)',
+        sage: '#3b82f6',
+        hi: '#10203a',
+        mid: 'rgba(16,32,58,.68)',
+        lo: 'rgba(16,32,58,.52)',
+        xlo: 'rgba(16,32,58,.34)',
+        border: 'rgba(16,32,58,.10)',
+        border2: 'rgba(16,32,58,.06)',
         wa: '#178a48',
         waDark: '#126b38',
         waBright: '#2fdb6f',
@@ -28,7 +31,7 @@ export default {
         mono: ['"Space Mono"', 'monospace'],
       },
       boxShadow: {
-        card: '0 20px 48px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.04)',
+        card: '0 12px 32px rgba(16,32,58,.12), 0 0 0 1px rgba(16,32,58,.04)',
       },
       backgroundImage: {
         dotgrid:
