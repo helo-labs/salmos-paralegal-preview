@@ -6,13 +6,13 @@ export default function HowItWorks() {
     <section className="border-t border-border bg-bg px-5 py-24 sm:px-7">
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-14 max-w-xl">
-          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-gold">
+          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
             // como funciona
           </p>
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Do primeiro contato ao registro,
             <br />
-            <span className="text-gold">em 4 passos simples.</span>
+            <span className="text-blue">em 4 passos simples.</span>
           </h2>
         </div>
 
@@ -20,12 +20,12 @@ export default function HowItWorks() {
           {/* linha conectora — só desktop */}
           <div
             aria-hidden
-            className="pointer-events-none absolute left-0 right-0 top-[27px] hidden h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent lg:block"
+            className="pointer-events-none absolute left-0 right-0 top-[27px] hidden h-px bg-gradient-to-r from-transparent via-blue/35 to-transparent lg:block"
           />
 
           {HOW_IT_WORKS.map((step, i) => (
             <div key={step.title} className={`sr d${i + 1} relative flex flex-col gap-4`}>
-              <div className="relative z-10 flex h-[54px] w-[54px] items-center justify-center rounded-full border border-gold/40 bg-bg2 font-display text-[18px] font-extrabold text-gold shadow-card">
+              <div className="relative z-10 flex h-[54px] w-[54px] items-center justify-center rounded-full border border-blue/40 bg-bg2 font-display text-[18px] font-extrabold text-blue shadow-card">
                 {String(i + 1).padStart(2, '0')}
               </div>
               <div>

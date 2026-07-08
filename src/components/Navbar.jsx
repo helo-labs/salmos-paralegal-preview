@@ -43,7 +43,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             title="Instagram"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-gold"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-blue"
           >
             <Icon name="instagram" size={15} />
           </a>
@@ -52,7 +52,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-gold"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-blue"
           >
             <Icon name="linkedin" size={15} />
           </a>

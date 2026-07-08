@@ -19,7 +19,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               title="Instagram"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-gold/40 hover:text-gold"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
             >
               <Icon name="instagram" size={15} />
             </a>
@@ -28,7 +28,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-gold/40 hover:text-gold"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
             >
               <Icon name="linkedin" size={15} />
             </a>
