@@ -15,6 +15,7 @@ export default {
         green: '#16283f',
         gold: '#cba552',
         sage: '#3b82f6',
+        blue: '#3b82f6',
         hi: '#10203a',
         mid: 'rgba(16,32,58,.68)',
         lo: 'rgba(16,32,58,.52)',
@@ -35,7 +36,7 @@ export default {
       },
       backgroundImage: {
         dotgrid:
-          'radial-gradient(circle, rgba(203,165,82,.16) 1px, transparent 1px)',
+          'radial-gradient(circle, rgba(59,130,246,.16) 1px, transparent 1px)',
       },
       backgroundSize: {
         dotgrid: '34px 34px',

@@ -7,13 +7,13 @@ export default function Services() {
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-12 grid gap-6 lg:grid-cols-2 lg:items-end">
           <div>
-            <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-gold">
+            <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
               // nossos serviços
             </p>
             <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[38px]">
               Tudo que sua empresa precisa,
               <br />
-              <span className="text-gold">em um só lugar.</span>
+              <span className="text-blue">em um só lugar.</span>
             </h2>
           </div>
           <p className="font-body text-[15px] font-light leading-[1.7] text-mid">
@@ -27,9 +27,9 @@ export default function Services() {
           {SERVICES.map((sv, i) => (
             <div
               key={sv.title}
-              className={`sr d${(i % 4) + 1} group flex flex-col gap-3 rounded-2xl border border-border bg-bg3 p-6 transition-all hover:-translate-y-1 hover:border-gold/30 hover:shadow-card active:scale-[0.98]`}
+              className={`sr d${(i % 4) + 1} group flex flex-col gap-3 rounded-2xl border border-border bg-bg3 p-6 transition-all hover:-translate-y-1 hover:border-blue/30 hover:shadow-card active:scale-[0.98]`}
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-surface text-mid transition-colors group-hover:border-gold/30 group-hover:text-gold">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-surface text-mid transition-colors group-hover:border-blue/30 group-hover:text-blue">
                 <Icon name={sv.icon} size={21} />
               </div>
               <h3 className="font-display text-[17px] font-bold tracking-tight text-hi">
@@ -42,7 +42,7 @@ export default function Services() {
                 href={WA.service(sv.title)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 inline-flex items-center gap-1.5 border-t border-border2 pt-3 font-body text-[12.5px] font-semibold text-gold transition-all hover:tracking-wide"
+                className="mt-1 inline-flex items-center gap-1.5 border-t border-border2 pt-3 font-body text-[12.5px] font-semibold text-blue transition-all hover:tracking-wide"
               >
                 Falar sobre isso <Icon name="arrow" size={13} strokeWidth={2.5} />
               </a>

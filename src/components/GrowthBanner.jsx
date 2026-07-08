@@ -36,7 +36,7 @@ export default function GrowthBanner() {
       <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
         <h2 className="sr font-display text-[26px] font-extrabold leading-[1.25] tracking-tight text-hi sm:text-[34px] lg:max-w-xl">
           Cuidamos da burocracia para você focar no que realmente importa:{' '}
-          <span className="text-gold">fazer sua empresa crescer.</span>
+          <span className="text-blue">fazer sua empresa crescer.</span>
         </h2>
 
         <div className="sr d2 flex flex-col items-start gap-5 lg:items-end">

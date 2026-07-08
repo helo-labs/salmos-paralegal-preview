@@ -17,7 +17,7 @@ export default function Hero() {
       {/* anéis concêntricos — ecoam o selo circular da marca */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-24 -top-24 h-[440px] w-[440px] rounded-full border border-gold/[0.14] sm:h-[560px] sm:w-[560px]"
+        className="pointer-events-none absolute -right-24 -top-24 h-[440px] w-[440px] rounded-full border border-blue/[0.14] sm:h-[560px] sm:w-[560px]"
       />
       <div
         aria-hidden
@@ -28,7 +28,7 @@ export default function Hero() {
       <div
         aria-hidden
         className="pointer-events-none absolute -right-32 -top-40 h-[520px] w-[520px] rounded-full"
-        style={{ background: 'radial-gradient(circle, rgba(203,165,82,.14) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(59,130,246,.14) 0%, transparent 65%)' }}
       />
       <div
         aria-hidden

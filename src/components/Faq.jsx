@@ -16,7 +16,7 @@ function FaqRow({ item, isOpen, onToggle }) {
         </span>
         <span
           className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-border text-mid transition-transform duration-300 ${
-            isOpen ? 'rotate-45 border-gold/40 text-gold' : ''
+            isOpen ? 'rotate-45 border-blue/40 text-blue' : ''
           }`}
         >
           <Icon name="close" size={13} strokeWidth={2.4} className="rotate-45" />
@@ -44,13 +44,13 @@ export default function Faq() {
     <section id="faq" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="sr lg:sticky lg:top-28">
-          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-gold">
+          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
             // perguntas frequentes
           </p>
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Ficou com
             <br />
-            alguma <span className="text-gold">dúvida?</span>
+            alguma <span className="text-blue">dúvida?</span>
           </h2>
           <p className="mt-5 max-w-sm font-body text-[14.5px] font-light leading-[1.7] text-mid">
             Se a sua pergunta não estiver aqui, é só chamar a gente no

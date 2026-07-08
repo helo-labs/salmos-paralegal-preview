@@ -7,12 +7,12 @@ export default function WhyUs() {
     <section id="por-que-nos" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
       <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:items-center">
         <div className="sr">
-          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-gold">
+          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
             // diferenciais
           </p>
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Por que escolher a{' '}
-            <span className="text-gold">Salmos?</span>
+            <span className="text-blue">Salmos?</span>
           </h2>
           <div className="mt-8">
             <Checklist items={WHY_US_ITEMS} />
@@ -35,14 +35,14 @@ export default function WhyUs() {
                 }}
               />
             ))}
-            <div className="absolute inset-x-0 bottom-0 flex h-3/4 flex-col gap-2.5 rounded-xl border border-gold/25 bg-surface p-5 shadow-card">
+            <div className="absolute inset-x-0 bottom-0 flex h-3/4 flex-col gap-2.5 rounded-xl border border-blue/25 bg-surface p-5 shadow-card">
               <div className="h-2 w-2/3 rounded-full bg-xlo" />
               <div className="h-2 w-1/2 rounded-full bg-xlo" />
               <div className="mt-2 h-2 w-full rounded-full bg-border2" />
               <div className="h-2 w-5/6 rounded-full bg-border2" />
               <div className="h-2 w-3/4 rounded-full bg-border2" />
               <div className="mt-auto flex items-center gap-2 border-t border-border2 pt-3">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full border border-gold/40 text-gold">
+                <span className="flex h-7 w-7 items-center justify-center rounded-full border border-blue/40 text-blue">
                   <Icon name="check" size={12} strokeWidth={3} />
                 </span>
                 <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-lo">
