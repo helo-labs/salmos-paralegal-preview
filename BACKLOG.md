@@ -5,8 +5,6 @@
 | Confirmar URLs de Instagram e LinkedIn | 🔴 Bloqueado | Média |
 | Decidir novo texto do H1/eyebrow do Hero | 🔴 Bloqueado | Média |
 | Revisar title/meta/JSON-LD do index.html | 🔴 Bloqueado | Média |
-| Corrigir azul: usar o tom escuro da Salmos Contabilidade | ⚪ A fazer | Alta |
-| Corrigir responsividade do Hero no mobile | ⚪ A fazer | Alta |
 | Revisar/remover anel decorativo do Hero ("parece cabelo") | ⚪ A fazer | Média |
 | Centralizar texto/botão do card "Não sabe qual serviço precisa?" no mobile | ⚪ A fazer | Média |
 | Rodar revisão de SEO (aqui e no GPT) | ⚪ A fazer | Média |
@@ -16,6 +14,8 @@
 | Lista de 3 serviços (Abertura, Alterações, Baixa) | 🟢 Concluído | — |
 | FAQ: junta comercial (90%) + remover pergunta de pagamento | 🟢 Concluído | — |
 | Ícones de Instagram/LinkedIn no header e footer | 🟢 Concluído | — |
+| Corrigir azul: usar o tom escuro da Salmos Contabilidade | 🟢 Concluído | — |
+| Corrigir responsividade do Hero no mobile | 🟢 Concluído | — |
 
 ## Detalhes
 
@@ -35,10 +35,12 @@ O texto atual ("Registros e regularização de empresas") é o que o cliente apr
 `index.html` (title, meta description, Open Graph, Twitter Card, JSON-LD) tem a mesma situação do Hero: description/title inteiros construídos em cima de "abertura, regularização e alteração... Registros na Junta Comercial, licenças e assessoria empresarial", e o JSON-LD `hasOfferCatalog` ainda lista os 6 serviços antigos. Não foi tocado — precisa da Heloisa pra decidir o texto novo antes de mexer. `theme-color` também ainda está escuro (`#0a0c0a`), tecnicamente desatualizado desde a troca de tema, mas deixei junto pra revisar tudo de uma vez.
 
 ### Corrigir azul: usar o tom escuro da Salmos Contabilidade
-O azul-marinho `#07172f` (extraído por pixel do samuel-logo.jpeg) ficou quase preto — não gostou. O azul mais claro `#3b82f6` também não gostou. Voltar pro azul escuro já usado no projeto Salmos Contabilidade (`#1F3856`, cor `surface` de lá) — nem um nem outro dos dois extremos que já tentamos.
+O azul-marinho `#07172f` (extraído por pixel do samuel-logo.jpeg) ficou quase preto — não gostou. O azul mais claro `#3b82f6` também não gostou. Voltado pro azul escuro já usado no projeto Salmos Contabilidade (`#1F3856`, cor `surface` de lá). Trocado em `tailwind.config.js` (tokens `forest`/`sage`/`blue`/`hi` e as variantes `rgba` de `mid`/`lo`/`xlo`/`border`/`border2`/sombra/dotgrid) e nos dois glows do Hero em `Hero.jsx`.
 
 ### Corrigir responsividade do Hero no mobile
-Está péssima — não detalhado ainda o que exatamente quebra, revisar com calma na próxima sessão.
+Causa raiz identificada: o container do Hero usa `display: grid` (`lg:grid-cols-2`), e o item da coluna esquerda tinha o `min-width: auto` padrão do CSS Grid — isso impedia o item de encolher pra caber no viewport, esticando o Hero além da largura das outras seções (por isso parecia puxado pra direita/desalinhado). Corrigido com `min-w-0` no item (`Hero.jsx`).
+Efeito colateral: com o container corretamente contido em ~335px (mobile), a palavra "regularização" em 34px (~371px de largura) não cabe mais numa linha. Testado `hyphens-auto` pra hifenização automática, mas o Chrome usado no teste não tinha dicionário pt-BR disponível — suporte é inconsistente entre navegadores, não confiável. Reduzida a fonte do H1 só no mobile (34px → 28px; `sm:` e `lg:` continuam 46px/54px) pra a palavra caber inteira, sem quebrar no meio — confirmado por pedido explícito da Heloisa. Mantido `break-words` como rede de segurança pra telas muito estreitas (≤~340px).
+Verificado sem overflow horizontal em 320px, 375px e full-page.
 
 ### Revisar/remover anel decorativo do Hero ("parece cabelo")
 O anel decorativo (`border border-blue/[0.20]`) ficou com aparência ruim — descrito como "parece um cabelo na tela". Repensar esse elemento (opacidade, espessura, ou remover).
