@@ -14,46 +14,26 @@ export default function Hero() {
         <rect width="100%" height="100%" filter="url(#heroGrain)" />
       </svg>
 
-      {/* anéis concêntricos — ecoam o selo circular da marca */}
+      {/* gradiente suave — dois glows grandes e muito diluídos, tipo OpenAI/Supabase */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-24 -top-24 h-[440px] w-[440px] rounded-full border border-blue/[0.20] sm:h-[560px] sm:w-[560px]"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-24 -top-24 hidden h-[440px] w-[440px] translate-x-14 translate-y-14 rounded-full border border-sage/[0.10] sm:block sm:h-[560px] sm:w-[560px]"
-      />
-
-      {/* glows em camadas — dourado + sálvia, mais quente e menos "SaaS genérico" */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-32 -top-40 h-[520px] w-[520px] rounded-full"
-        style={{ background: 'radial-gradient(circle, rgba(31,56,86,.16) 0%, transparent 65%)' }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-32 bottom-0 h-[420px] w-[420px] rounded-full"
-        style={{ background: 'radial-gradient(circle, rgba(31,56,86,.12) 0%, transparent 70%)' }}
-      />
-
-      {/* dot grid, sutil */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-dotgrid bg-dotgrid opacity-70"
+        className="pointer-events-none absolute inset-0"
         style={{
-          maskImage: 'radial-gradient(ellipse 75% 65% at 50% 28%, black 25%, transparent 100%)',
-          WebkitMaskImage: 'radial-gradient(ellipse 75% 65% at 50% 28%, black 25%, transparent 100%)',
+          background: `
+            radial-gradient(ellipse 90% 75% at 85% 0%, rgba(28,86,156,0.40), transparent 78%),
+            radial-gradient(ellipse 75% 65% at 5% 100%, rgba(225,186,78,0.22), transparent 78%)
+          `,
         }}
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-7 lg:grid-cols-2 lg:items-center">
+      <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-7 xl:grid-cols-2 xl:items-center">
         {/* ── Left ── */}
         <div className="min-w-0">
           <p className="sr mb-6 font-mono text-[11px] tracking-[0.1em] text-lo">
             REGISTROS E REGULARIZAÇÃO DE EMPRESAS
           </p>
 
-          <h1 className="sr d1 break-words font-display text-[28px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px] lg:text-[54px]">
+          <h1 className="sr d1 break-words font-display text-[28px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px]">
             Registros e <span className="text-gold">regularização</span>
             <br />
             de empresas.
@@ -97,8 +77,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ── Right: services preview panel — só desktop/tablet. No mobile ele ocupava espaço sem agregar (os serviços já aparecem logo na seção seguinte) ── */}
-        <div className="sr d2 hidden lg:block">
+        {/* ── Right: services preview panel — só desktop. No mobile/tablet ele ocupava espaço sem agregar (os serviços já aparecem logo na seção seguinte) ── */}
+        <div className="sr d2 hidden xl:block">
           <div className="mx-auto max-w-[420px] overflow-hidden rounded-2xl border border-border bg-bg2 shadow-card">
             {/* header do painel, com selo da marca em vez de bolinhas genéricas de "browser" */}
             <div className="flex items-center gap-3 border-b border-border bg-surface px-5 py-4">

@@ -13,7 +13,7 @@ export default function Services() {
             <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[38px]">
               Tudo que sua empresa precisa,
               <br />
-              <span className="text-blue">em um só lugar.</span>
+              <span className="text-blue2">em um só lugar.</span>
             </h2>
           </div>
           <p className="font-body text-[15px] font-light leading-[1.7] text-mid">
