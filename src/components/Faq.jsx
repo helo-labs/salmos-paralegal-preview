@@ -50,7 +50,7 @@ export default function Faq() {
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Ficou com
             <br />
-            alguma <span className="text-blue">dúvida?</span>
+            alguma <span className="text-blue2">dúvida?</span>
           </h2>
           <p className="mt-5 max-w-sm font-body text-[14.5px] font-light leading-[1.7] text-mid">
             Se a sua pergunta não estiver aqui, é só chamar a gente no

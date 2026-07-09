@@ -12,7 +12,7 @@ export default function WhyUs() {
           </p>
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Por que escolher a{' '}
-            <span className="text-blue">Salmos?</span>
+            <span className="text-gold">Salmos?</span>
           </h2>
           <div className="mt-8">
             <Checklist items={WHY_US_ITEMS} />

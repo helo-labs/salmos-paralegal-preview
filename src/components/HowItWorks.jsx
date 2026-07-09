@@ -12,7 +12,7 @@ export default function HowItWorks() {
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Do primeiro contato ao registro,
             <br />
-            <span className="text-blue">em 4 passos simples.</span>
+            <span className="text-blue2">em 4 passos simples.</span>
           </h2>
         </div>
 
