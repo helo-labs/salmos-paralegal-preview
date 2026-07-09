@@ -48,12 +48,12 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-7 lg:grid-cols-2 lg:items-center">
         {/* ── Left ── */}
-        <div>
+        <div className="min-w-0">
           <p className="sr mb-6 font-mono text-[11px] tracking-[0.1em] text-lo">
             REGISTROS E REGULARIZAÇÃO DE EMPRESAS
           </p>
 
-          <h1 className="sr d1 font-display text-[34px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px] lg:text-[54px]">
+          <h1 className="sr d1 break-words font-display text-[28px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px] lg:text-[54px]">
             Registros e <span className="text-gold">regularização</span>
             <br />
             de empresas.
