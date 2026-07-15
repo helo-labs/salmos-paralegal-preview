@@ -2,6 +2,7 @@ import Logo from './Logo'
 import Icon from './Icon'
 import WhatsAppIcon from './WhatsAppIcon'
 import { SERVICES, SOCIAL, WA } from '../data/content'
+import { scrollToId } from '../scrollToId'
 
 export default function Footer() {
   return (
@@ -45,6 +46,7 @@ export default function Footer() {
                 <a
                   key={sv.title}
                   href="#servicos"
+                  onClick={(e) => { e.preventDefault(); scrollToId('servicos') }}
                   className="py-1 font-body text-[13px] font-light text-mid transition-colors hover:text-hi"
                 >
                   {sv.title}
