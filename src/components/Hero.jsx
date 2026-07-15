@@ -1,6 +1,5 @@
 import Icon from './Icon'
 import WhatsAppIcon from './WhatsAppIcon'
-import Logo from './Logo'
 import { HERO_BADGES, SERVICES, WA } from '../data/content'
 
 export default function Hero() {
@@ -82,7 +81,6 @@ export default function Hero() {
           <div className="mx-auto max-w-[420px] overflow-hidden rounded-2xl border border-border bg-bg2 shadow-card">
             {/* header do painel, com selo da marca em vez de bolinhas genéricas de "browser" */}
             <div className="flex items-center gap-3 border-b border-border bg-surface px-5 py-4">
-              <Logo showName={false} size={30} />
               <span className="font-mono text-[11px] tracking-[0.06em] text-lo">
                 Áreas de atuação
               </span>
