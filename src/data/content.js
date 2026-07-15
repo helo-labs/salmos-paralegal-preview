@@ -106,7 +106,7 @@ export const TRUST_STATS = [
 ]
 
 export const FOOTER_STRIP_ITEMS = [
-  '100% online',
+  'Atendimento online',
   'Todo o Brasil',
   'Orçamento sem surpresas',
   'Suporte direto com o especialista',

@@ -7,13 +7,13 @@ export default function WhyUs() {
     <section id="por-que-nos" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
       <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:items-center">
         <div className="sr">
-          <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+          <p className="mb-3 font-accent italic text-[14px] font-semibold uppercase tracking-[0.16em] text-blue">
             Diferenciais
           </p>
           <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Por que escolher a{' '}
-            <span className="font-accent italic font-semibold text-gold">Salmos?</span>
+            <span className="text-gold">Salmos?</span>
           </h2>
           <div className="mt-8">
             <Checklist items={WHY_US_ITEMS} />
