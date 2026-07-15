@@ -7,8 +7,8 @@ export default function Services() {
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-12 grid gap-6 lg:grid-cols-2 lg:items-end">
           <div>
-            <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
-              // nossos serviços
+            <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+              Nossos serviços
             </p>
             <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[38px]">
               Tudo que sua empresa precisa,

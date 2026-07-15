@@ -44,8 +44,8 @@ export default function Faq() {
     <section id="faq" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="sr lg:sticky lg:top-28">
-          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
-            // perguntas frequentes
+          <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+            Perguntas frequentes
           </p>
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Ficou com
