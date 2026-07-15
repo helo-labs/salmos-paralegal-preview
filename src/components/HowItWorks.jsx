@@ -9,10 +9,11 @@ export default function HowItWorks() {
           <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
             Como funciona
           </p>
+          <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Do primeiro contato ao registro,
             <br />
-            <span className="text-blue2">em 4 passos simples.</span>
+            <span className="font-accent italic font-semibold text-blue2">em 4 passos simples.</span>
           </h2>
         </div>
 
@@ -25,7 +26,7 @@ export default function HowItWorks() {
 
           {HOW_IT_WORKS.map((step, i) => (
             <div key={step.title} className={`sr d${i + 1} relative flex flex-col gap-4`}>
-              <div className="relative z-10 flex h-[54px] w-[54px] items-center justify-center rounded-full border border-blue/40 bg-bg2 font-display text-[18px] font-extrabold text-blue shadow-card">
+              <div className="relative z-10 flex h-[54px] w-[54px] items-center justify-center rounded-full bg-gold font-display text-[18px] font-extrabold text-hi shadow-card">
                 {String(i + 1).padStart(2, '0')}
               </div>
               <div>

@@ -1,4 +1,5 @@
 import Icon from './Icon'
+import WhatsAppIcon from './WhatsAppIcon'
 import { SERVICES, WA } from '../data/content'
 
 export default function Services() {
@@ -10,10 +11,11 @@ export default function Services() {
             <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
               Nossos serviços
             </p>
+            <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
             <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[38px]">
               Tudo que sua empresa precisa,
               <br />
-              <span className="text-blue2">em um só lugar.</span>
+              <span className="font-accent italic font-semibold text-blue2">em um só lugar.</span>
             </h2>
           </div>
           <p className="font-body text-[15px] font-light leading-[1.7] text-mid">
@@ -29,8 +31,8 @@ export default function Services() {
               key={sv.title}
               className={`sr d${(i % 4) + 1} group flex flex-col gap-3 rounded-2xl border border-border bg-bg3 p-6 transition-all hover:-translate-y-1 hover:border-blue/30 hover:shadow-card active:scale-[0.98]`}
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-surface text-mid transition-colors group-hover:border-blue/30 group-hover:text-blue">
-                <Icon name={sv.icon} size={21} />
+              <div className="text-lo transition-colors group-hover:text-blue">
+                <Icon name={sv.icon} size={24} />
               </div>
               <h3 className="font-display text-[17px] font-bold tracking-tight text-hi">
                 {sv.title}
@@ -66,6 +68,7 @@ export default function Services() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 rounded-xl bg-wa px-6 py-3.5 font-body text-[13.5px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-waDark active:scale-[0.97]"
           >
+            <WhatsAppIcon size={16} />
             Falar com um especialista
           </a>
         </div>

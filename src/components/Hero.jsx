@@ -29,12 +29,13 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-7 xl:grid-cols-2 xl:items-center">
         {/* ── Left ── */}
         <div className="min-w-0">
-          <p className="sr mb-6 font-body text-[11px] font-bold uppercase tracking-[0.16em] text-lo">
+          <p className="sr mb-3 font-body text-[11px] font-bold uppercase tracking-[0.16em] text-lo">
             Registros e regularização de empresas
           </p>
+          <span aria-hidden className="sr mb-6 block h-[2px] w-8 bg-gold" />
 
           <h1 className="sr d1 break-words font-display text-[28px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px]">
-            Registros e <span className="text-gold">regularização</span>
+            Registros e <span className="font-accent italic font-semibold text-gold">regularização</span>
             <br />
             de empresas.
           </h1>
