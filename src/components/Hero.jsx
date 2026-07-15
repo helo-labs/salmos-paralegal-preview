@@ -15,14 +15,14 @@ export default function Hero() {
       </svg>
 
       <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-7 xl:grid-cols-2 xl:items-center">
-        <div className="min-w-0">
+        <div className="min-w-0 text-center xl:text-left">
           <h1 className="sr d1 break-words font-display text-[28px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px]">
             Registros e <span className="text-gold">regularização</span>
             <br />
             de empresas.
           </h1>
 
-          <p className="sr d2 mt-6 max-w-md font-body text-[16px] font-light leading-[1.7] text-mid">
+          <p className="sr d2 mx-auto mt-6 max-w-md font-body text-[16px] font-light leading-[1.7] text-mid xl:mx-0">
             Soluções completas para o seu negócio crescer com segurança.
             Cuidamos de toda a burocracia para você focar no que importa.
           </p>
@@ -49,7 +49,7 @@ export default function Hero() {
           {/* Badges */}
           <div className="sr d4 mt-11 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-border pt-8 sm:grid-cols-4">
             {HERO_BADGES.map((b) => (
-              <div key={b.label + b.sub} className="flex flex-col gap-2">
+              <div key={b.label + b.sub} className="flex flex-col items-center gap-2 xl:items-start">
                 <Icon name={b.icon} size={20} className="text-gold" />
                 <p className="font-body text-[12.5px] leading-tight text-mid">
                   <span className="font-semibold text-hi">{b.label}</span>
