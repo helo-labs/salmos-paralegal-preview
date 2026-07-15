@@ -1,5 +1,4 @@
 import Icon from './Icon'
-import WhatsAppIcon from './WhatsAppIcon'
 import { SERVICES, WA } from '../data/content'
 
 export default function Services() {
@@ -8,19 +7,19 @@ export default function Services() {
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-12 grid gap-6 lg:grid-cols-2 lg:items-end">
           <div>
-            <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+            <p className="mb-3 font-accent italic text-[14px] font-semibold uppercase tracking-[0.16em] text-blue">
               Nossos serviços
             </p>
             <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
             <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[38px]">
               Tudo que sua empresa precisa,
               <br />
-              <span className="font-accent italic font-semibold text-blue2">em um só lugar.</span>
+              <span className="text-blue2">em um só lugar.</span>
             </h2>
           </div>
           <p className="font-body text-[15px] font-light leading-[1.7] text-mid">
             Sem deslocamento, sem papelada física, sem filas. Atendemos em
-            todo o Brasil, com processos 100% online e acompanhamento em
+            todo o Brasil, com processos online e acompanhamento em
             cada etapa.
           </p>
         </div>
@@ -44,16 +43,25 @@ export default function Services() {
                 href={WA.service(sv.title)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 inline-flex items-center gap-1.5 border-t border-border2 pt-3 font-body text-[12.5px] font-semibold text-blue transition-all hover:tracking-wide"
+                className="group/cta mt-1 inline-flex w-fit items-center gap-1.5 border-t border-border2 pt-3 font-body text-[12.5px] font-semibold text-blue transition-colors hover:text-gold"
               >
-                Falar sobre isso <Icon name="arrow" size={13} strokeWidth={2.5} />
+                <span className="relative">
+                  Falar sobre isso
+                  <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover/cta:w-full" />
+                </span>
+                <Icon
+                  name="arrow"
+                  size={13}
+                  strokeWidth={2.5}
+                  className="transition-transform duration-300 group-hover/cta:translate-x-1"
+                />
               </a>
             </div>
           ))}
         </div>
 
         {/* strip */}
-        <div className="sr d2 mt-6 flex flex-wrap items-center justify-between gap-5 rounded-2xl border border-border bg-surface px-7 py-7">
+        <div className="sr d2 mt-6 flex flex-col items-center gap-5 rounded-2xl border border-border bg-surface px-7 py-7 text-center sm:flex-row sm:flex-wrap sm:justify-between sm:text-left">
           <div>
             <p className="font-display text-[17px] font-bold tracking-tight text-hi">
               Não sabe qual serviço precisa?
@@ -66,10 +74,9 @@ export default function Services() {
             href={WA.default}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 rounded-xl bg-wa px-6 py-3.5 font-body text-[13.5px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-waDark active:scale-[0.97]"
+            className="inline-flex items-center gap-2.5 rounded-xl bg-gold px-6 py-3.5 font-body text-[13.5px] font-semibold text-hi transition-all hover:-translate-y-0.5 active:scale-[0.97]"
           >
-            <WhatsAppIcon size={16} />
-            Falar com um especialista
+            Vamos conversar!
           </a>
         </div>
       </div>

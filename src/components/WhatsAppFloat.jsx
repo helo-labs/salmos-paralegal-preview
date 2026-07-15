@@ -16,12 +16,14 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
-      className={`fixed bottom-5 right-5 z-[999] flex h-14 w-14 items-center justify-center rounded-full bg-wa text-white shadow-card transition-all duration-500 hover:-translate-y-0.5 hover:bg-waDark active:scale-[0.95] sm:h-auto sm:w-auto sm:gap-2.5 sm:rounded-full sm:py-3.5 sm:pl-4 sm:pr-5 sm:font-body sm:text-[12px] sm:font-semibold sm:uppercase sm:tracking-wide sm:bottom-7 sm:right-7 ${
+      className={`group fixed bottom-5 right-5 z-[999] flex items-center gap-0 rounded-full bg-wa p-4 text-white shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:gap-2 hover:bg-waDark active:scale-[0.95] sm:bottom-7 sm:right-7 ${
         visible ? 'opacity-100 translate-y-0' : 'pointer-events-none translate-y-2 opacity-0'
       }`}
     >
-      <WhatsAppIcon size={22} />
-      <span className="hidden sm:inline">Falar agora</span>
+      <WhatsAppIcon size={22} className="shrink-0" />
+      <span className="overflow-hidden whitespace-nowrap font-body text-[0px] font-semibold uppercase tracking-wide transition-all duration-300 group-hover:text-[12px]">
+        Falar agora
+      </span>
     </a>
   )
 }

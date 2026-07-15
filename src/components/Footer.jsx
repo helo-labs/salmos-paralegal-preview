@@ -12,7 +12,7 @@ export default function Footer() {
           <Logo />
           <p className="mt-4 max-w-xs font-body text-[13px] font-light leading-[1.7] text-lo">
             Abertura e alterações contratuais para empreendedores em
-            todo o Brasil, 100% online.
+            todo o Brasil, atendimento online.
           </p>
           <div className="mt-5 flex items-center gap-3">
             <a
@@ -83,7 +83,7 @@ export default function Footer() {
           © 2026 Salmos Consultoria Paralegal
         </span>
         <span className="font-mono text-[10px] tracking-[0.07em] text-xlo">
-          Atendimento 100% online
+          Atendimento online
         </span>
       </div>
     </footer>

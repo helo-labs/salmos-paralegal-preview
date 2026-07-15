@@ -1,6 +1,6 @@
 import Icon from './Icon'
 import WhatsAppIcon from './WhatsAppIcon'
-import { HERO_BADGES, SERVICES, WA } from '../data/content'
+import { HERO_BADGES, WA } from '../data/content'
 import { scrollToId } from '../scrollToId'
 
 export default function Hero() {
@@ -14,28 +14,10 @@ export default function Hero() {
         <rect width="100%" height="100%" filter="url(#heroGrain)" />
       </svg>
 
-      {/* gradiente suave — dois glows grandes e muito diluídos, tipo OpenAI/Supabase */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background: `
-            radial-gradient(ellipse 90% 75% at 85% 0%, rgba(28,86,156,0.40), transparent 78%),
-            radial-gradient(ellipse 75% 65% at 5% 100%, rgba(225,186,78,0.22), transparent 78%)
-          `,
-        }}
-      />
-
       <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-7 xl:grid-cols-2 xl:items-center">
-        {/* ── Left ── */}
         <div className="min-w-0">
-          <p className="sr mb-3 font-body text-[11px] font-bold uppercase tracking-[0.16em] text-lo">
-            Registros e regularização de empresas
-          </p>
-          <span aria-hidden className="sr mb-6 block h-[2px] w-8 bg-gold" />
-
           <h1 className="sr d1 break-words font-display text-[28px] font-extrabold leading-[1.08] tracking-tight text-hi sm:text-[46px]">
-            Registros e <span className="font-accent italic font-semibold text-gold">regularização</span>
+            Registros e <span className="text-gold">regularização</span>
             <br />
             de empresas.
           </h1>
@@ -79,39 +61,34 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ── Right: painel "áreas de atuação" — só desktop. No mobile/tablet ele ocupava espaço sem agregar (os serviços já aparecem logo na seção seguinte) ── */}
+        {/* ── Right: card antes/depois — só desktop, contraste de experiência em vez de repetir listas de conteúdo ── */}
         <div className="sr d2 hidden xl:block">
-          <div className="mx-auto max-w-[420px] overflow-hidden rounded-2xl border border-border bg-bg2 shadow-card">
-            <div className="border-b border-gold/30 px-6 pb-5 pt-6">
-              <span className="font-body text-[10px] font-bold uppercase tracking-[0.14em] text-gold">
-                Áreas de atuação
+          <div className="mx-auto max-w-[380px] overflow-hidden rounded-2xl border border-border shadow-card">
+            <div className="flex flex-col items-center gap-3 bg-surface px-8 py-9 text-center">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-xlo/15 text-lo">
+                <Icon name="folder" size={22} />
               </span>
-              <p className="mt-1.5 font-display text-[18px] font-bold tracking-tight text-hi">
-                O que cuidamos pra você
+              <p className="font-body text-[10px] font-bold uppercase tracking-[0.14em] text-lo">
+                Antes
+              </p>
+              <p className="font-body text-[14.5px] font-light leading-[1.6] text-mid">
+                Papelada, prazos incertos, burocracia parada.
               </p>
             </div>
 
-            <div className="flex flex-col gap-1 p-4">
-              {SERVICES.map((sv) => (
-                <div key={sv.title} className="flex items-start gap-3.5 rounded-lg px-2 py-3">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sage/15 text-sage">
-                    <Icon name="check" size={12} strokeWidth={3} />
-                  </span>
-                  <div className="flex-1">
-                    <p className="font-body text-[13px] font-semibold text-hi">
-                      {sv.title}
-                    </p>
-                    <p className="mt-0.5 font-body text-[11.5px] font-light text-lo">
-                      {sv.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="flex items-center justify-center bg-blue2/15 py-2">
+              <Icon name="arrow" size={16} strokeWidth={2.5} className="rotate-90 text-blue2" />
             </div>
 
-            <div className="border-t border-border2 px-6 py-4">
-              <p className="font-body text-[11.5px] font-light leading-relaxed text-lo">
-                Acompanhamento em cada etapa, do primeiro contato à documentação pronta.
+            <div className="flex flex-col items-center gap-3 bg-forest px-8 py-9 text-center">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/15 text-gold">
+                <Icon name="check" size={22} strokeWidth={3} />
+              </span>
+              <p className="font-body text-[10px] font-bold uppercase tracking-[0.14em] text-gold">
+                Depois
+              </p>
+              <p className="font-body text-[14.5px] font-light leading-[1.6] text-white/80">
+                Empresa aberta, documentação em dia, processo simplificado.
               </p>
             </div>
           </div>

@@ -44,14 +44,14 @@ export default function Faq() {
     <section id="faq" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="sr lg:sticky lg:top-28">
-          <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+          <p className="mb-3 font-accent italic text-[14px] font-semibold uppercase tracking-[0.16em] text-blue">
             Perguntas frequentes
           </p>
           <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Ficou com
             <br />
-            alguma <span className="font-accent italic font-semibold text-blue2">dúvida?</span>
+            alguma <span className="text-blue2">dúvida?</span>
           </h2>
           <p className="mt-5 max-w-sm font-body text-[14.5px] font-light leading-[1.7] text-mid">
             Se a sua pergunta não estiver aqui, é só chamar a gente no

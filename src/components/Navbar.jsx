@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Logo from './Logo'
 import Icon from './Icon'
+import HamburgerIcon from './HamburgerIcon'
 import { NAV_LINKS, SOCIAL, WA } from '../data/content'
 import { scrollToId } from '../scrollToId'
 
@@ -75,7 +76,7 @@ export default function Navbar() {
           onClick={() => setOpen((v) => !v)}
           aria-label="Menu"
         >
-          <Icon name={open ? 'close' : 'menu'} size={22} />
+          <HamburgerIcon open={open} size={26} />
         </button>
       </div>
 
