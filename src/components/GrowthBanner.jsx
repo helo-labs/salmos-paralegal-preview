@@ -40,7 +40,7 @@ export default function GrowthBanner() {
         </h2>
 
         <div className="sr d2 flex flex-col items-start gap-5 lg:items-end">
-          <Logo showName />
+          <Logo showName variant="full" />
           <a
             href={WA.default}
             target="_blank"
