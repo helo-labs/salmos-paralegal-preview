@@ -23,7 +23,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-[68px] max-w-6xl items-center gap-6 px-5 sm:px-7">
-        <Logo />
+        <Logo shape="square" />
 
         <nav className="ml-auto hidden md:flex items-center gap-1">
           {NAV_LINKS.map((l) => (
