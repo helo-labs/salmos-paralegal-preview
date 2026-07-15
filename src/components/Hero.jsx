@@ -112,7 +112,7 @@ export default function Hero() {
                 href={WA.default}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-forest py-3.5 font-body text-[13px] font-semibold text-sage transition-colors hover:bg-green"
+                className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-forest py-3.5 font-body text-[13px] font-semibold text-gold transition-colors hover:bg-green"
               >
                 Falar com um especialista
               </a>
