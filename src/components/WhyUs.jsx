@@ -10,9 +10,10 @@ export default function WhyUs() {
           <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
             Diferenciais
           </p>
+          <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Por que escolher a{' '}
-            <span className="text-gold">Salmos?</span>
+            <span className="font-accent italic font-semibold text-gold">Salmos?</span>
           </h2>
           <div className="mt-8">
             <Checklist items={WHY_US_ITEMS} />

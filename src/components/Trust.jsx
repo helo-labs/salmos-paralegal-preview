@@ -17,10 +17,11 @@ export default function Trust() {
           <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
             Segurança jurídica
           </p>
+          <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
           <h2 className="font-display text-[24px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Segurança jurídica para
             <br />
-            <span className="text-blue2">decisões inteligentes.</span>
+            <span className="font-accent italic font-semibold text-blue2">decisões inteligentes.</span>
           </h2>
           <p className="mt-4 font-body text-[14px] font-light leading-[1.7] text-mid sm:mt-5 sm:text-[14.5px]">
             A base legal que sua empresa precisa para ir mais longe.

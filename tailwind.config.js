@@ -35,6 +35,7 @@ export default {
         display: ['Syne', 'system-ui', 'sans-serif'],
         body: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
         mono: ['"Space Mono"', 'monospace'],
+        accent: ['"Cormorant Garamond"', 'Georgia', 'serif'],
       },
       boxShadow: {
         card: '0 12px 32px rgba(31,56,86,.12), 0 0 0 1px rgba(31,56,86,.04)',

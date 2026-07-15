@@ -47,10 +47,11 @@ export default function Faq() {
           <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
             Perguntas frequentes
           </p>
+          <span aria-hidden className="mb-6 block h-[2px] w-8 bg-gold" />
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Ficou com
             <br />
-            alguma <span className="text-blue2">dúvida?</span>
+            alguma <span className="font-accent italic font-semibold text-blue2">dúvida?</span>
           </h2>
           <p className="mt-5 max-w-sm font-body text-[14.5px] font-light leading-[1.7] text-mid">
             Se a sua pergunta não estiver aqui, é só chamar a gente no
