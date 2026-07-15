@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Logo from './Logo'
 import Icon from './Icon'
 import { NAV_LINKS, SOCIAL, WA } from '../data/content'
+import { scrollToId } from '../scrollToId'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -30,6 +31,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
+              onClick={(e) => { e.preventDefault(); scrollToId(l.href) }}
               className="rounded-md px-3.5 py-2 font-body text-[13px] text-mid transition-colors hover:text-hi hover:bg-surface"
             >
               {l.label}
@@ -88,7 +90,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              onClick={() => setOpen(false)}
+              onClick={(e) => { e.preventDefault(); setOpen(false); scrollToId(l.href) }}
               className="border-b border-border2 py-3.5 font-body text-[15px] text-mid"
             >
               {l.label}

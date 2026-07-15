@@ -1,6 +1,7 @@
 import Icon from './Icon'
 import WhatsAppIcon from './WhatsAppIcon'
 import { HERO_BADGES, SERVICES, WA } from '../data/content'
+import { scrollToId } from '../scrollToId'
 
 export default function Hero() {
   return (
@@ -55,6 +56,7 @@ export default function Hero() {
             </a>
             <a
               href="#servicos"
+              onClick={(e) => { e.preventDefault(); scrollToId('servicos') }}
               className="inline-flex items-center rounded-xl border border-border px-6 py-3.5 font-body text-[14px] font-medium text-mid transition-all hover:border-xlo hover:bg-surface hover:text-hi active:scale-[0.97]"
             >
               Ver serviços
