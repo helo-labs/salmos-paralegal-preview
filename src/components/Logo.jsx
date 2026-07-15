@@ -1,7 +1,7 @@
 import logoIcon from '../assets/logo1.png'
 import logoFull from '../assets/logo.jpg'
 
-export default function Logo({ size = 40, showName = true, variant = 'icon', className = '' }) {
+export default function Logo({ size = 40, showName = true, variant = 'icon', shape = 'circle', className = '' }) {
   const src = variant === 'full' ? logoFull : logoIcon
   return (
     <a href="#top" className={`flex items-center gap-2.5 shrink-0 ${className}`}>
@@ -10,7 +10,7 @@ export default function Logo({ size = 40, showName = true, variant = 'icon', cla
         alt="Salmos Consultoria Paralegal"
         width={size}
         height={size}
-        className="shrink-0 rounded-full object-cover"
+        className={`shrink-0 object-cover ${shape === 'square' ? 'rounded-2xl' : 'rounded-full'}`}
         style={{ width: size, height: size }}
       />
       {showName && (
