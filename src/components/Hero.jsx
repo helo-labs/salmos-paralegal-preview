@@ -27,7 +27,7 @@ export default function Hero() {
             Cuidamos de toda a burocracia para você focar no que importa.
           </p>
 
-          <div className="sr d3 mt-9 flex flex-wrap gap-3">
+          <div className="sr d3 mt-9 flex flex-wrap justify-center gap-3 xl:justify-start">
             <a
               href={WA.default}
               target="_blank"
