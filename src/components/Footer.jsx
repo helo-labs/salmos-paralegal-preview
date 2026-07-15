@@ -72,6 +72,9 @@ export default function Footer() {
               atendimento@salmosconsultoriaparalegal.com.br
             </p>
             <p className="py-0.5 font-body text-[12.5px] font-light text-lo">
+              Rua Afonso Sardinha, 407 - Lapa, São Paulo - SP
+            </p>
+            <p className="py-0.5 font-body text-[12.5px] font-light text-lo">
               Atendimento em todo o Brasil
             </p>
           </div>
