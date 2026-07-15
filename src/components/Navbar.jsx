@@ -106,6 +106,26 @@ export default function Navbar() {
           >
             Falar no WhatsApp →
           </a>
+          <div className="mt-4 flex items-center justify-center gap-3 border-t border-border2 pt-4">
+            <a
+              href={SOCIAL.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
+            >
+              <Icon name="instagram" size={16} />
+            </a>
+            <a
+              href={SOCIAL.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
+            >
+              <Icon name="linkedin" size={16} />
+            </a>
+          </div>
         </div>
       </div>
     </header>
