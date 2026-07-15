@@ -33,7 +33,7 @@ export default function Trust() {
               key={t.label}
               className={`sr d${(i % 4) + 1} flex flex-col items-center gap-2.5 rounded-xl border border-border bg-bg3 px-3 py-5 text-center transition-colors hover:border-blue/30 sm:gap-4 sm:rounded-2xl sm:px-6 sm:py-9`}
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-blue/30 bg-forest text-blue sm:h-14 sm:w-14">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-blue/30 bg-forest text-gold sm:h-14 sm:w-14">
                 <Icon name={t.icon} size={20} className="sm:hidden" />
                 <Icon name={t.icon} size={24} className="hidden sm:block" />
               </span>
