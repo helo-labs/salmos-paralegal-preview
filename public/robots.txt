@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.samuelbueno.com.br/sitemap.xml
+Sitemap: https://salmosconsultoriaparalegal.com.br/sitemap.xml
