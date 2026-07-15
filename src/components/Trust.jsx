@@ -14,8 +14,8 @@ export default function Trust() {
 
       <div className="relative mx-auto max-w-6xl">
         <div className="sr mb-10 max-w-xl sm:mb-14">
-          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
-            // segurança jurídica
+          <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+            Segurança jurídica
           </p>
           <h2 className="font-display text-[24px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Segurança jurídica para

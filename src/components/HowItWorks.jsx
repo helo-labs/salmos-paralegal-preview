@@ -6,8 +6,8 @@ export default function HowItWorks() {
     <section className="border-t border-border bg-bg px-5 py-24 sm:px-7">
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-14 max-w-xl">
-          <p className="mb-3 font-mono text-[12px] font-bold tracking-[0.06em] text-blue">
-            // como funciona
+          <p className="mb-3 font-body text-[12px] font-bold uppercase tracking-[0.16em] text-blue">
+            Como funciona
           </p>
           <h2 className="font-display text-[28px] font-extrabold leading-tight tracking-tight text-hi sm:text-[36px]">
             Do primeiro contato ao registro,
