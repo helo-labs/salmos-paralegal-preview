@@ -4,7 +4,7 @@ import { WHY_US_ITEMS } from '../data/content'
 
 export default function WhyUs() {
   return (
-    <section id="por-que-nos" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
+    <section id="por-que-nos" className="border-t border-border bg-bg2 px-5 py-20 sm:px-7 sm:py-24">
       <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:items-center">
         <div className="sr">
           <p className="mb-3 font-accent italic text-[14px] font-semibold uppercase tracking-[0.16em] text-blue">
@@ -21,7 +21,7 @@ export default function WhyUs() {
         </div>
 
         {/* pilha de "documentos" ilustrativa, em CSS puro — reforça visualmente o cuidado com o processo, sem repetir texto de outra seção */}
-        <div className="sr d2 flex justify-center lg:justify-end">
+        <div className="sr d2 hidden lg:flex lg:justify-end">
           <div className="relative mx-auto h-64 w-56 sm:h-72 sm:w-64">
             {[0, 1, 2].map((i) => (
               <div

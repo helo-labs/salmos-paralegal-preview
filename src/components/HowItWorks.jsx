@@ -3,7 +3,7 @@ import { HOW_IT_WORKS, WA } from '../data/content'
 
 export default function HowItWorks() {
   return (
-    <section className="border-t border-border bg-bg px-5 py-24 sm:px-7">
+    <section className="border-t border-border bg-bg px-5 py-20 sm:px-7 sm:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-14 max-w-xl">
           <p className="mb-3 font-accent italic text-[14px] font-semibold uppercase tracking-[0.16em] text-blue">

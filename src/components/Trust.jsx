@@ -3,7 +3,7 @@ import { TRUST_STATS } from '../data/content'
 
 export default function Trust() {
   return (
-    <section id="seguranca" className="relative overflow-hidden border-t border-border bg-bg px-5 py-24 sm:px-7">
+    <section id="seguranca" className="relative overflow-hidden border-t border-border bg-bg px-5 py-20 sm:px-7 sm:py-24">
       <div
         aria-hidden
         className="pointer-events-none absolute -left-40 top-1/2 hidden h-[520px] w-[520px] -translate-y-1/2 rounded-full sm:block"

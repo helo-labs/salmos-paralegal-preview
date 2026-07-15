@@ -3,10 +3,10 @@ import { WA } from '../data/content'
 
 export default function GrowthBanner() {
   return (
-    <section className="relative overflow-hidden bg-bg px-5 py-24 sm:px-7">
-      {/* skyline silhouette */}
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 opacity-25">
-        <svg viewBox="0 0 1200 220" className="w-full text-forest" fill="currentColor">
+    <section className="relative overflow-hidden bg-bg px-5 py-20 sm:px-7 sm:py-24">
+      {/* skyline silhouette — altura fixa no mobile (senão a seção fica alta e o fundo vira só uma tira fina) */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-40 opacity-25 sm:h-48 lg:h-auto">
+        <svg viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax slice" className="h-full w-full text-forest lg:h-auto" fill="currentColor">
           <rect x="20" y="90" width="70" height="130" />
           <rect x="110" y="40" width="55" height="180" />
           <rect x="185" y="120" width="60" height="100" />
@@ -33,13 +33,13 @@ export default function GrowthBanner() {
         }}
       />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-8 text-center lg:flex-row lg:items-center lg:justify-between lg:text-left">
         <h2 className="sr font-display text-[26px] font-extrabold leading-[1.25] tracking-tight text-hi sm:text-[34px] lg:max-w-xl">
           Cuidamos da burocracia para você focar no que realmente importa:{' '}
           <span className="text-gold">fazer sua empresa crescer.</span>
         </h2>
 
-        <div className="sr d2 flex flex-col items-start gap-5 lg:items-end">
+        <div className="sr d2 flex flex-col items-center gap-5 lg:items-end">
           <Logo showName variant="full" shape="square" size={72} />
           <a
             href={WA.default}

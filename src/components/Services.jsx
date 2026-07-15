@@ -3,7 +3,7 @@ import { SERVICES, WA } from '../data/content'
 
 export default function Services() {
   return (
-    <section id="servicos" className="border-t border-border bg-bg2 px-5 py-24 sm:px-7">
+    <section id="servicos" className="border-t border-border bg-bg2 px-5 py-20 sm:px-7 sm:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="sr mb-12 grid gap-6 lg:grid-cols-2 lg:items-end">
           <div>
