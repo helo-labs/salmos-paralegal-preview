@@ -68,7 +68,7 @@ export const HOW_IT_WORKS = [
   },
   {
     title: 'Empresa em dia',
-    desc: 'Você recebe a confirmação e a documentação pronta — sem sair de casa.',
+    desc: 'Você recebe a confirmação e a documentação pronta.',
   },
 ]
 
@@ -92,7 +92,7 @@ export const FAQ_ITEMS = [
 ]
 
 export const WHY_US_ITEMS = [
-  'Mais de 10 anos cuidando de registros e regularização empresarial',
+  'Experiência cuidando de registros e regularização empresarial',
   'Equipe especializada, sempre atualizada com a legislação vigente',
   'Cada etapa documentada e validada antes de seguir para a próxima',
   'Um único ponto de contato do início ao encerramento do processo',

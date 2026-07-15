@@ -5,7 +5,7 @@ export default function GrowthBanner() {
   return (
     <section className="relative overflow-hidden bg-bg px-5 py-24 sm:px-7">
       {/* skyline silhouette */}
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 opacity-40">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 opacity-25">
         <svg viewBox="0 0 1200 220" className="w-full text-forest" fill="currentColor">
           <rect x="20" y="90" width="70" height="130" />
           <rect x="110" y="40" width="55" height="180" />
