@@ -44,7 +44,7 @@ export const SERVICES = [
   {
     icon: 'edit',
     title: 'Alterações Contratuais e/ou Estatutárias',
-    desc: 'Alterações de contrato social ou estatuto, sócios, atividade, endereço e muito mais.',
+    desc: 'Atualização de contrato social, quadro societário, atividades, endereço e demais alterações legais.',
   },
   {
     icon: 'folder',
@@ -56,7 +56,7 @@ export const SERVICES = [
 export const HOW_IT_WORKS = [
   {
     title: 'Você chama no WhatsApp',
-    desc: 'Conte rapidamente o que precisa — abertura, regularização ou alteração da sua empresa.',
+    desc: 'Explique rapidamente sua necessidade — abertura, regularização ou alteração da sua empresa.',
   },
   {
     title: 'Fazemos o diagnóstico',
@@ -64,7 +64,7 @@ export const HOW_IT_WORKS = [
   },
   {
     title: 'Cuidamos da documentação',
-    desc: 'Preparamos e protocolamos tudo junto aos órgãos competentes, com você acompanhando cada etapa.',
+    desc: 'Preparamos e protocolamos tudo junto aos órgãos competentes, mantendo você informado durante todo o processo.',
   },
   {
     title: 'Empresa em dia',
@@ -92,10 +92,11 @@ export const FAQ_ITEMS = [
 ]
 
 export const WHY_US_ITEMS = [
-  'Experiência cuidando de registros e regularização empresarial',
-  'Equipe especializada, sempre atualizada com a legislação vigente',
-  'Cada etapa documentada e validada antes de seguir para a próxima',
-  'Um único ponto de contato do início ao encerramento do processo',
+  'Atendimento consultivo do início ao fim',
+  'Comunicação direta com o responsável pelo seu processo',
+  'Processos totalmente digitais na maioria dos casos',
+  'Documentação revisada antes de cada protocolo',
+  'Experiência com juntas comerciais de todo o Brasil',
 ]
 
 export const TRUST_STATS = [
@@ -108,6 +109,6 @@ export const TRUST_STATS = [
 export const FOOTER_STRIP_ITEMS = [
   'Atendimento online',
   'Todo o Brasil',
-  'Orçamento sem surpresas',
+  'Orçamento transparente',
   'Suporte direto com o especialista',
 ]

@@ -18,9 +18,10 @@ export default function Services() {
             </h2>
           </div>
           <p className="font-body text-[15px] font-light leading-[1.7] text-mid">
-            Sem deslocamento, sem papelada física, sem filas. Atendemos em
-            todo o Brasil, com processos online e acompanhamento em
-            cada etapa.
+            Realizamos processos de abertura de empresas, alterações
+            contratuais, baixas e regularizações. Na maioria dos casos, todo
+            o processo acontece online, com envio digital de documentos e
+            acompanhamento especializado do início ao fim.
           </p>
         </div>
 
