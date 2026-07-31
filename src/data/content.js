@@ -3,7 +3,7 @@
 // Troque aqui o número do WhatsApp (com DDI) e os textos.
 // ─────────────────────────────────────────────────────────
 
-const WHATSAPP_NUMBER = '5511999990000'
+const WHATSAPP_NUMBER = '5511911612113'
 
 function waLink(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
@@ -22,10 +22,8 @@ export const NAV_LINKS = [
   { label: 'Contato', href: '#contato' },
 ]
 
-// Placeholder até o cliente confirmar os perfis reais — ver BACKLOG.md.
 export const SOCIAL = {
-  instagram: '#',
-  linkedin: '#',
+  instagram: 'https://www.instagram.com/salmos_contabilidade',
 }
 
 export const HERO_BADGES = [

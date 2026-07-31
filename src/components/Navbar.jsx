@@ -50,15 +50,6 @@ export default function Navbar() {
           >
             <Icon name="instagram" size={15} />
           </a>
-          <a
-            href={SOCIAL.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LinkedIn"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-lo transition-colors hover:bg-surface hover:text-blue"
-          >
-            <Icon name="linkedin" size={15} />
-          </a>
         </div>
 
         <a
@@ -115,15 +106,6 @@ export default function Navbar() {
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
             >
               <Icon name="instagram" size={16} />
-            </a>
-            <a
-              href={SOCIAL.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
-            >
-              <Icon name="linkedin" size={16} />
             </a>
           </div>
         </div>

@@ -24,15 +24,6 @@ export default function Footer() {
             >
               <Icon name="instagram" size={15} />
             </a>
-            <a
-              href={SOCIAL.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-lo transition-colors hover:border-blue/40 hover:text-blue"
-            >
-              <Icon name="linkedin" size={15} />
-            </a>
           </div>
         </div>
 
@@ -69,7 +60,7 @@ export default function Footer() {
               WhatsApp
             </a>
             <p className="py-0.5 font-body text-[12.5px] font-light text-lo">
-              atendimento@salmosconsultoriaparalegal.com.br
+              processos@salmoscontabilidade.com.br
             </p>
             <p className="py-0.5 font-body text-[12.5px] font-light text-lo">
               Rua Afonso Sardinha, 407 - Lapa, São Paulo - SP
